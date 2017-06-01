@@ -14,6 +14,7 @@ Use what you learned in the class 4 lecture to improve the structure of your Por
 ## Technical Requirements and Grading Rubric
  - Add Handlebars to your blogging system.
  - Organize your CSS code according to SMACSS, with at least a file for base, layout, and modules.
+ - Include an `.eslintrc` file and make sure you pass.  [Here's one](https://gist.github.com/sajoy/05ede1c681bfa59d1295f55290c7a795) you can use as an example; feel free to add or remove rules as you'd like.
 
 ## Helpful Resources
  - Handlebars: http://handlebarsjs.com
