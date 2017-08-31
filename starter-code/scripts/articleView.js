@@ -3,6 +3,7 @@
 var articleView = {};
 
 articleView.populateFilters = function() {
+  console.log("populate filters is running");
   $('article').each(function() {
     if (!$(this).hasClass('template')) {
       var val = $(this).find('address a').text();
