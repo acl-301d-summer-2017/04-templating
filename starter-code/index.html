@@ -11,8 +11,28 @@
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
 
+    <script id="template" type="text/x-handlebars-template">
+      <article class="main-article">
+        <header>
+          <h1>{{title}}</h1>
+          <div class="byline">
+            By <address><a {{{authorUrl}}} >{{author}}</a></address>
+            published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>
+          </div>
+        </header>
+        <section>{{body}}</section>
+        <a href="#" class="read-on">Read on &rarr;</a>
+      </article>
+    </script>
+          
+
+    
+    
+  
+
+
     <!--
-      TODO: Add a script tag to hold the Handlebars template.
+      TODO-DONE: Add a script tag to hold the Handlebars template.
         - Be sure to give it a meaningful id attribute.
         - Move your old template structure to here. Remember that this template
           needs to have the same structure as the old one!
@@ -39,6 +59,7 @@
       </nav>
     </header>
     <main>
+
       <section id="articles" class="tab-content">
         <div>
           <ul id="filters">
@@ -55,6 +76,7 @@
           </ul>
         </div>
       </section>
+
       <section id="about" class="tab-content">
         <header>
           Welcome to my Blog
@@ -74,7 +96,8 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- TODO: Include Handlebars.JS from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+
     <script src="scripts/blogArticles.js"></script>
     <script src="scripts/article.js"></script>
     <script src="scripts/articleView.js"></script>
