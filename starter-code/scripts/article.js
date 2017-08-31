@@ -15,7 +15,7 @@ Article.prototype.toHtml = function() {
   // TODO: Use handlebars to render your articles.
   //       - Get your template from the DOM.
   //       - Now "compile" your template with Handlebars.
-  var template = $('article-template').html();
+  var template = $('#article-template').html();
   var templateFiller = Handlebars.compile(template);
   var filledTemplate = templateFiller(this);
 
