@@ -30,7 +30,7 @@ Article.prototype.toHtml = function() {
 
   var filledTemplate = templateFiller( this );
 
-  $('#articleId').append(filledTemplate);
+  $('#articles').append(filledTemplate);
   console.log('filledTemplate', filledTemplate);
 };
 
@@ -47,7 +47,3 @@ function populateArticles () {
     $('#articles').append(article.toHtml());
   });
 }
-
-$( document ).ready( function () {
-  populateArticles();
-})
